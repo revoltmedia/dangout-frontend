@@ -1,7 +1,7 @@
 import React from "react"
 import { useLazyQuery } from '@apollo/react-hooks'
 import { Button } from 'semantic-ui-react'
-import client from "../../services/apollo-client"
+import client from "../services/apollo-client"
 
 /**
  * A button that triggers useLazyQuery according to properties.
