@@ -5,7 +5,7 @@ import { createHttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 
 const httpLink = createHttpLink({
-  uri: process.env.BACKEND_URI
+  uri: process.env.GATSBY_BACKEND_URI
 })
 
 const authLink = setContext((_, { headers }) => {
