@@ -1,0 +1,14 @@
+body {
+  >div {
+    >div {
+      >div {
+        >header,
+        >main,
+        >footer {
+          @include make-container();
+          max-width: 1200px;
+        }
+      }
+    }
+  }
+}

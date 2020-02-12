@@ -1,0 +1,51 @@
+{
+  "name": "dangout-frontend-web",
+  "private": true,
+  "description": "",
+  "author": "Josh Fleming <go@revoltmedia.com>",
+  "version": "0.0.1",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@types/react-router-dom": "^4.3.4",
+    "apollo-cache-inmemory": "^1.6.2",
+    "apollo-client": "^2.6.3",
+    "apollo-link-context": "^1.0.18",
+    "apollo-link-http": "^1.5.15",
+    "bootstrap": "^4.3.1",
+    "gatsby": "^2.1.19",
+    "gatsby-plugin-manifest": "^2.2.3",
+    "gatsby-plugin-react-helmet": "^3.0.7",
+    "gatsby-plugin-sass": "^2.0.10",
+    "gatsby-source-graphql": "^2.1.0",
+    "graphql": "^14.4.2",
+    "graphql-tag": "^2.10.1",
+    "isomorphic-fetch": "^2.2.1",
+    "jquery": "^3.4.1",
+    "node-sass": "^4.11.0",
+    "popper": "^1.0.1",
+    "react": "^16.8.3",
+    "react-apollo": "^2.5.8",
+    "react-dom": "^16.8.3",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^5.0.1",
+    "reactstrap": "^7.1.0",
+    "reakit": "^1.0.0-beta.4",
+    "reakit-system-bootstrap": "^0.6.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.87.3",
+    "sharp": "^0.23.2",
+    "universal-cookie": "^4.0.2",
+    "webpack": "^4.35.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.16.4"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "yarn develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  }
+}

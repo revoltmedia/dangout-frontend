@@ -1,0 +1,27 @@
+.portfolio {
+  @include media-breakpoint-up(sm){
+    @include make-row();
+  }
+  >div {
+    >div {
+      text-align: center;
+      >img {
+        width:100%;
+        height:auto;
+      }
+      >h3,
+      >div {
+        text-align: left;
+      }
+      @include media-breakpoint-up(sm){
+        @include make-container()
+      }
+    }
+    @include media-breakpoint-up(sm){
+      @include make-col(6);
+    }
+    @include media-breakpoint-up(portfolio-md){
+      @include make-col(4);
+    }
+  }
+}
