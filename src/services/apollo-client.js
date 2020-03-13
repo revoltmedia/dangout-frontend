@@ -3,13 +3,14 @@ import { AUTH_TOKEN } from '../constants'
 import { ApolloClient } from 'apollo-client'
 import { createHttpLink } from 'apollo-link-http'
 import { InMemoryCache } from 'apollo-cache-inmemory'
+import { authToken } from '../services/auth'
 
 const httpLink = createHttpLink({
   uri: process.env.GATSBY_BACKEND_URI
 })
 
 const authLink = setContext((_, { headers }) => {
-  const token = localStorage.getItem(AUTH_TOKEN)
+  const token = authToken()
   return {
     headers: {
       ...headers,
