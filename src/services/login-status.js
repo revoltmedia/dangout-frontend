@@ -1,4 +1,5 @@
-import React, { PropTypes, Children } from "react"
+import React, { PropTypes, Children } from 'react'
+import { authToken } from '../services/auth'
 
 class LoginStatusProvider extends React.Component {
     constructor(props) {
@@ -20,7 +21,7 @@ class LoginStatusProvider extends React.Component {
 
     isLoggedIn() {
       if(isBrowser){
-        const token = localStorage.getItem(AUTH_TOKEN)
+        const token = authToken
   
         if(token) {
           return true
